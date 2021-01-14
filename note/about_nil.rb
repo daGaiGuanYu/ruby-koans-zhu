@@ -13,6 +13,9 @@ class AboutNil < Neo::Koan
       nil.some_method_nil_doesnt_know_about
     rescue Exception => ex
       # What exception has been caught?
+      ## 如果你没使用过其他编程语言，可以跳过这一题
+      ## 其他语言中，如果对象不存在，一般会报“空指针异常”、“试图调用一个不存在的对象的方法”或者类似的错误
+      ## 而 ruby 中，nil 不是不存在，而是一个特殊的对象，既然是对象，就代表“存在”，就不会出现“空指针”
       assert_equal NoMethodError, ex.class
 
       # What message was attached to the exception?
@@ -33,6 +36,7 @@ class AboutNil < Neo::Koan
     # or
     #    obj == nil
     # Why?
+    ## TODO 答：
   end
 
 end
