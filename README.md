@@ -12,8 +12,8 @@
 ## 开始
 本仓库分三大部分：
 + readme，就是你现在正在看的这篇
-+ [原练习题](https://github.com/daGaiGuanYu/ruby-koans-zhu/tree/main/%E4%B8%AA%E4%BA%BA%E7%AD%94%E6%A1%88%E3%80%81%E7%AC%94%E8%AE%B0)，由于某种原因，下载原版的练习题，可能很慢（甚至下载不了）
-+ [个人的答案、及笔记](https://github.com/daGaiGuanYu/ruby-koans-zhu/tree/main/%E4%B8%AA%E4%BA%BA%E7%AD%94%E6%A1%88%E3%80%81%E7%AC%94%E8%AE%B0)
++ [原练习题](https://github.com/daGaiGuanYu/ruby-koans-zhu/tree/main/exercise)，由于某种原因，下载原版的练习题，可能很慢（甚至下载不了）
++ [个人的答案、及笔记](https://github.com/daGaiGuanYu/ruby-koans-zhu/tree/main/note)
 
 ##### 第一步，准备环境
 只需要安装一个 ruby 就够了  
@@ -25,17 +25,17 @@
 ```bash
 git clone https://github.com/daGaiGuanYu/ruby-koans-zhu.git
 ```
-里面有“原练习题”文件夹，就是**未经任何改动**的原始的从官网下载的源码  
+里面有“exercise”文件夹，就是**未经任何改动**的原始的从官网下载的源码  
 
-或者你对你的网络有信心，也可以从官网下载，点[这个链接](http://rubykoans.com/)
+或者，如果你对你的网络有信心，也可以从官网下载，点[这个链接](http://rubykoans.com/)
 
 ##### 第三步，开始做题
 + 打开命令行工具
-+ 切换到“练习题”所在的文件夹
++ 切换到“exercise”所在的文件夹
 + 输入 rake，回车，你将看到：
 
 ```bash
-PS D:\workspace\ruby-koans-zhu\原练习题> rake
+PS D:\workspace\ruby-koans-zhu\exercise> rake
 C:/Ruby27-x64/bin/ruby.exe path_to_enlightenment.rb
 AboutAsserts#test_assert_truth has damaged your karma.
 
@@ -46,7 +46,7 @@ The answers you seek...
   Failed assertion.
 
 Please meditate on the following code:
-  D:/workspace/ruby-koans-zhu/原练习题/about_asserts.rb:10:in `test_assert_truth'
+  D:/workspace/ruby-koans-zhu/exercise/about_asserts.rb:10:in `test_assert_truth'
 
 mountains are merely mountains
 your path thus far [X_________________________________________________] 0/281 (0%)
@@ -57,9 +57,9 @@ your path thus far [X_________________________________________________] 0/281 (0
 
 倒数第三行：
 ```base
-D:/workspace/ruby-koans-zhu/原练习题/about_asserts.rb:10:in `test_assert_truth'
+D:/workspace/ruby-koans-zhu/exercise/about_asserts.rb:10:in `test_assert_truth'
 ```
-是你当前要做的题：```原练习题```文件夹下的```about_assert.rb```文件的第```10```行  
+是你当前要做的题：```exercise```文件夹下的```about_assert.rb```文件的第```10```行  
 
 祝，早日心明眼亮。
 
@@ -82,7 +82,7 @@ end
 所有的练习题，都是**给 assert 一个 true**  
 现在输入 rake，你会看到：
 ```bash
-PS D:\workspace\ruby-koans-zhu\原练习题> rake
+PS D:\workspace\ruby-koans-zhu\exercise> rake
 C:/Ruby27-x64/bin/ruby.exe path_to_enlightenment.rb
 AboutAsserts#test_assert_truth has expanded your awareness.
 AboutAsserts#test_assert_with_message has damaged your karma.
@@ -95,12 +95,12 @@ The answers you seek...
   This should be true -- Please fix this
 
 Please meditate on the following code:
-  D:/workspace/ruby-koans-zhu/原练习题/about_asserts.rb:16:in `test_assert_with_message'
+  D:/workspace/ruby-koans-zhu/exercise/about_asserts.rb:16:in `test_assert_with_message'
 
 learn the rules so you know how to break them properly
 your path thus far [.X________________________________________________] 1/281 (0%)
 ```
-可以看到，你现在要做的题，已经是```原练习题/about_asserts.rb```里的第 16 行了  
+可以看到，你现在要做的题，已经是```exercise/about_asserts.rb```里的第 16 行了  
 0/281 也变成了 1/281（不到 1%，四舍五入为 0%）
 
 **第二题**，依然是把 false 改为 true  
@@ -124,7 +124,7 @@ end
 
 做完第四、五题之后，再输入 rake，你会看到：
 ```bash
-PS D:\workspace\ruby-koans-zhu\原练习题> rake
+PS D:\workspace\ruby-koans-zhu\exercise> rake
 C:/Ruby27-x64/bin/ruby.exe path_to_enlightenment.rb
 AboutAsserts#test_assert_equality has expanded your awareness.
 AboutAsserts#test_a_better_way_of_asserting_equality has expanded your awareness.
@@ -139,14 +139,14 @@ The answers you seek...
   Unlike NULL in other languages
 
 Please meditate on the following code:
-  D:/workspace/ruby-koans-zhu/原练习题/about_nil.rb:5:in `test_nil_is_an_object'
+  D:/workspace/ruby-koans-zhu/exercise/about_nil.rb:5:in `test_nil_is_an_object'
 
 sleep is the best meditation
 your path thus far [.X________________________________________________] 5/281 (1%)
 ```
 倒数第一行：你已经做了 5 道题了，进度是 1%  
-倒数第三行：你现在要做的是```原练习题/about_nil.rb```的第 5 行  
+倒数第三行：你现在要做的是```exercise/about_nil.rb```的第 5 行  
 
 ##### 参考答案
-本仓库的```个人答案、笔记```文件夹下，是[个人的答案和笔记](https://github.com/daGaiGuanYu/ruby-koans-zhu/tree/main/%E4%B8%AA%E4%BA%BA%E7%AD%94%E6%A1%88%E3%80%81%E7%AC%94%E8%AE%B0)  
+本仓库的```note```文件夹下，是[个人的答案和笔记](https://github.com/daGaiGuanYu/ruby-koans-zhu/tree/main/note)  
 有的题目，有些不解、启发，都会记录下来（在**中文注释**里），如有不对的地方，欢迎指正
