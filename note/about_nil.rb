@@ -36,7 +36,7 @@ class AboutNil < Neo::Koan
     # or
     #    obj == nil
     # Why?
-    ## TODO 答：
+    ## 答：经过我的搜索，这两者没有太大区别，至少对于初学者来说关系不大
   end
 
 end
