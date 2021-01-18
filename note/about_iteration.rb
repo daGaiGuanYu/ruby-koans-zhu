@@ -13,7 +13,7 @@ class AboutIteration < Neo::Koan
   # whenever comparing to lists of methods.
   ## 当比较一系列方法时。
 
-  ## 按：其实下面只有一道题目使用了 as_name
+  ## 注者按：其实下面只有一道题目使用了 as_name
   ## 不同的 Ruby 版本，有不同的行为，这个 as_name 方法，只是为了兼容不同版本的 Ruby
   ## 建议使用 2.x 版本的同学，直接忽略掉上面的话、下面的 as_name 定义、再下面 as_name 的使用
   ## 建议使用 1.x 版本的同学，使用 2.x 版本
