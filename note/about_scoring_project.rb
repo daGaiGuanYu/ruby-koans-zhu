@@ -31,6 +31,27 @@ require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 def score(dice)
   # You need to write this method
+  result = 0
+  ## 统计各数字出现的次数
+  map = Hash.new 0
+  dice.each { |item| map[item] += 1 }
+  
+  ## 三个一
+  if map[1] > 2
+    result += 1000
+    map[1] -= 3
+  end
+  ## 三个其他
+  map.each do |number, times|
+    if times > 2
+      result += number * 100
+      map[number] -= 3
+    end
+  end
+  ## 剩余的 1
+  result += 100 * map[1]
+  ## 剩余的 5
+  result += 50 * map[5]
 end
 
 class AboutScoringProject < Neo::Koan
