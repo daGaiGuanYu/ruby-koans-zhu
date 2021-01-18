@@ -1,6 +1,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 # You need to write the triangle method in the file 'triangle.rb'
+## 你需要写（同目录下的）triangle.rb 文件里的 triangle 方法
 require './triangle'
 
 class AboutTriangleProject < Neo::Koan
