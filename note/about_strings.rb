@@ -54,12 +54,10 @@ It was the best of times,
 It was the worst of times.
 EOS
     ## 和上例不同的是，这种写法，开头的 EOS 要单独占一行
-    ## 要不，解析器怎么知道这个 EOS 是字符串开始的标识，还是字符串的一部分
-    ## 而结尾的 EOS 不需要单独占一行
-    ## 因为，开头有 EOS，解析器已经知道字符串的结尾有 EOS，并且它是字符串结束的标识，不是字符串的一部分
-    ## 所以，第一个字符不是换行符，而是字母 I，最后一个字符不是句号，而是换行符
+    ## 而结尾的 EOS 不需要
+    ## 也就是说，第一个字符不是换行符，而是字母 I，最后一个字符不是句号，而是换行符
     assert_equal 53, long_string.length ## 比上例，少一个“开头的换行符”
-    assert_equal 2, long_string.lines.count ## 也就少一行
+    assert_equal 2, long_string.lines.count ## 于是，就少一行
     assert_equal "I", long_string[0,1]
   end
 
