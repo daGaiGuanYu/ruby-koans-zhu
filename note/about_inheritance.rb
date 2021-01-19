@@ -59,7 +59,8 @@ class AboutInheritance < Neo::Koan
   class BullDog < Dog
     def bark
       super + ", GROWL"
-      ## 跟其他语言不一样的是，不需要指定 super 的哪个方法，直接调用 super 的同名方法
+      ## 跟其他语言不一样的是，不需要指定 super 的哪个方法
+      ## 这里，使用 super，会调用父类中的同名方法
     end
   end
 
