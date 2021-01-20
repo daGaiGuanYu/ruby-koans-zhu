@@ -31,7 +31,7 @@ class AboutObjects < Neo::Koan
   end
 
   def test_small_integers_have_fixed_ids
-    ## 这一题，可以实用 irb 来测试，也可以输入 rake 之后，看提示
+    ## 这一题，可以使用 irb 来测试，也可以输入 rake 之后，看提示
     assert_equal 1, 0.object_id
     assert_equal 3, 1.object_id
     assert_equal 5, 2.object_id
